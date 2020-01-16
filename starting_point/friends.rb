@@ -32,3 +32,12 @@ def count_money_total(people)
   end
   return total_money
 end
+
+
+def loan_money(lender, lendee, ammount)
+  if
+    ammount < lender[:monies]
+    lender[:monies] -= ammount
+    lendee[:monies] += ammount
+  end
+end
